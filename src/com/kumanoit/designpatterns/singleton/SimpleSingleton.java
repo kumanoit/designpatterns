@@ -1,7 +1,7 @@
 package com.kumanoit.designpatterns.singleton;
 
 /**
- * This is a simple singleton class where at any instance there won't be more than one instance of this class available.
+ * This is a strategy singleton class where at any instance there won't be more than one instance of this class available.
  *
  * Advantage:
  * 1. Only one object is created.
