@@ -1,5 +1,8 @@
 package com.kumanoit.designpatterns.simple.third;
 
+import com.kumanoit.designpatterns.simple.third.interfaces.FlyBehaviour;
+import com.kumanoit.designpatterns.simple.third.interfaces.QuackBehaviour;
+
 public class RubberDuck extends Duck implements FlyBehaviour, QuackBehaviour {
 
     @Override
