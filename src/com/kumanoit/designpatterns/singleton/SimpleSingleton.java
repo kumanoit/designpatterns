@@ -17,13 +17,13 @@ package com.kumanoit.designpatterns.singleton;
  * in the Philippines but an object will be created.
  */
 public class SimpleSingleton {
-    private static final SimpleSingleton SIMPLE_SINGLETON = new SimpleSingleton();
+    private static final SimpleSingleton instance = new SimpleSingleton();
 
     private SimpleSingleton() {
         // No external class can create an object of this class
     }
 
     private SimpleSingleton getInstance() {
-        return SIMPLE_SINGLETON;
+        return instance;
     }
 }

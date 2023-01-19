@@ -13,15 +13,15 @@ package com.kumanoit.designpatterns.singleton;
  */
 public class LazyLoadedSingleton {
 
-    private static LazyLoadedSingleton lazyLoadedSingleton;
+    private static LazyLoadedSingleton instance;
     private LazyLoadedSingleton() {
         // No external class can create an object of this class
     }
 
     public static LazyLoadedSingleton getInstance() {
-        if (lazyLoadedSingleton == null) {
-            lazyLoadedSingleton = new LazyLoadedSingleton();
+        if (instance == null) {
+            instance = new LazyLoadedSingleton();
         }
-        return lazyLoadedSingleton;
+        return instance;
     }
 }

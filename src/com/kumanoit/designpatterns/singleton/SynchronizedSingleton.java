@@ -15,15 +15,15 @@ package com.kumanoit.designpatterns.singleton;
  */
 public class SynchronizedSingleton {
 
-    private static SynchronizedSingleton synchronizedSingleton;
+    private static SynchronizedSingleton instance;
     private SynchronizedSingleton() {
         // No external class can create an object of this class
     }
 
     public static synchronized SynchronizedSingleton getInstance() {
-        if (synchronizedSingleton == null) {
-            synchronizedSingleton = new SynchronizedSingleton();
+        if (instance == null) {
+            instance = new SynchronizedSingleton();
         }
-        return synchronizedSingleton;
+        return instance;
     }
 }
