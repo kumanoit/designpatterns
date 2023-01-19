@@ -19,7 +19,7 @@ public class DoubleCheckedLockingSynchronizationSingleton {
         // No external class can create an object of this class
     }
 
-    private DoubleCheckedLockingSynchronizationSingleton getInstance() {
+    public static DoubleCheckedLockingSynchronizationSingleton getInstance() {
         // this check is needed to ensure that we need to create an object
         if (instance == null) {
             // synchronization will ensure that no two thread get inside to create an object
